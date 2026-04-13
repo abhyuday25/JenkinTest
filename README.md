@@ -69,29 +69,33 @@ public boolean transfer(double balance, double amount) {
 return balance >= amount && amount > 0;}}
 Create file:
 src/test/java → com.bank → BankServiceTest.java
-package com.bank;
-import static org.junit.jupiter.api.Assertions.*;
-package sathya;
-import static org.junit.Assert.*;
-import org.junit.Test;
-public class maven {
-@Test
+package com.bank.BankingMavenJUnit;
+public class BankServiceTest {
+
 public void validTransferTest() {
-maven service = new maven();
+BankServiceTest service = new BankServiceTest();
 assertTrue(service.transfer(1000, 500));
 }
-@Test
+private void assertTrue(boolean transfer) {
+	// TODO Auto-generated method stub
+	
+}
+
 public void invalidTransferTest() {
-maven service = new maven();
+BankServiceTest service = new BankServiceTest();
 assertFalse(service.transfer(200, 500));
+}
+private void assertFalse(boolean transfer) {
+	// TODO Auto-generated method stub
+	
 }
 public boolean transfer(int balance, int amount) {
 if (balance >= amount) {
 return true;
 }
 return false;
-}}
-
+}
+}
 
 
 KUBERNETES
